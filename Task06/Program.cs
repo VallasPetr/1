@@ -10,9 +10,9 @@ int number = Convert.ToInt32(Console.ReadLine());
 int a = number % 2;
 if(a==0) 
 {
-    Console.Write($"Число {number} чётное");
+    Console.Write("Да");
 }
 else
 {    
-Console.Write($"Число {number} не чётное");
+Console.Write("Нет");
 }
