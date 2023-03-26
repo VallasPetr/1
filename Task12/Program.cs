@@ -10,16 +10,25 @@ Console.Write("Введите второе число ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 // Первый способ
-if(number1%number2==0)
-{
-    Console.Write("КРАТНО");
-}
-else
-{
-    int number3 = number1%number2;
-    Console.WriteLine($"НЕ КРАТНО {number3} ");
-}
+// if(number1%number2==0)
+// {
+//     Console.Write("КРАТНО");
+// }
+// else
+// {
+//     int number3 = number1%number2;
+//     Console.WriteLine($"НЕ КРАТНО {number3} ");
+// }
 
 // Второй способ
+int multiple = Multiple(number1, number2);
+string resultEnd = multiple==0
+                             ?"КРАТНО"
+                             :$"НЕ КРАТНО {multiple} ";
+Console.WriteLine(resultEnd);
 
-
+int Multiple(int num1, int num2)
+{
+    int result = num1 % num2;
+    return result;
+}

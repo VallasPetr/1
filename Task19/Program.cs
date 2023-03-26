@@ -4,6 +4,8 @@
 // 12821 -> да
 // 23432 -> да
 
+// Первый вариант
+
 Console.WriteLine("Введите пятизначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
