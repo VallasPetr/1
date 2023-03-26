@@ -26,7 +26,10 @@ int Factorial(int num)
     int multi = 1;
     for (int i = 1; i <= num; i++)
     {
-        multi *= i;
+        checked
+        {
+            multi *=i;
+        }
     }
     return multi;
 }
