@@ -4,19 +4,33 @@
 // 3, 5 -> 243;
 // 2, 4 -> 16;
 
-Console.WriteLine("Введите число A = ");
+Console.Write("Введите число A = ");
 int numberA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите положительное число B = ");
+Console.Write("Введите положительное число B = ");
 int numberB = Convert.ToInt32(Console.ReadLine());
+if(numberB>0)
+{
+int multiply = Multiply(numberA); // int numA = numberA;
+Console.WriteLine($"A в степени B = {multiply}");
+int Multiply(int numA)
+{
+for (int i = 1; numberB > i; i++)
+{
+    int multiply = numA * numberA;
+    numA = multiply;
+}
+return numA;
+}
+}
+else
+{
+    Console.WriteLine("Число B введено некорректно");
+}
 
-int expon = Expon(number);
-Console.WriteLine($"A в степени В = {expon}");
-int Expon(int num)
-{
-while(i<=numberB)
-{
-    num *=numberA;
-    i++;
-}
-    random num;
-}
+
+
+
+
+// int expon = Expon(num);
+
+
